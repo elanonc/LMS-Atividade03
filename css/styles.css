@@ -16,7 +16,7 @@ body {
 /*HEADER*/
 
 .header-container {
-    background-color: #141414;
+    background-color: var(--azul);
     padding-inline: 200px;
 }
 
@@ -26,7 +26,6 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-
 
 .logo-link {
     margin: 0;
@@ -38,7 +37,7 @@ body {
 }
 
 .logo {
-    width: 100px;
+    width: 80px;
     margin-right: 10px;
 }
 
@@ -61,7 +60,7 @@ header nav a:hover {
 /*DROPDOWN MENU*/
 
 .dropbtn {
-    background-color: var(--vermelho);
+    background-color: var(--cinzaDois);
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -76,11 +75,14 @@ header nav a:hover {
 
 .dropdown-content {
     display: none;
-    position: fixed;
-    background-color: #141414;
     min-width: 160px;
+
+    background-color: var(--cinzaDois);
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
     z-index: 1;
+    position: fixed;
 }
 
 .dropdown-content a {
@@ -98,14 +100,14 @@ header nav a:hover {
 }
 
 .dropdown:hover .dropbtn {
-    background-color: var(--vermelho);
+    background-color: var(--tonal);
 }
 
 /*MAIN*/
 
 .main-section {
     font-size: 20px;
-    margin-inline: 190px;
+    margin-inline: 250px;
     margin-top: 50px;
 
     display: flex;
@@ -114,19 +116,19 @@ header nav a:hover {
     align-items: center;
 }
 
-/* .article-image1 {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-color: red;
-    box-shadow: 0 10px #222222;
-} */
-
 .main-section .main-description {
-    margin-top: 30px;
-    margin-bottom: 40px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.main-section .main-description p {
+    width: 50%;
     font-size: 20px;
     font-weight: 400;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .main-section .main-title {
@@ -138,10 +140,6 @@ header nav a:hover {
     color: var(--vermelho);
 }
 
-.highlight:hover {
-    color: blueviolet;
-}
-
 img {
     width: 20em;
 }
@@ -149,7 +147,7 @@ img {
 button {
     align-items: center;
     border: 0;
-    border-radius: 100px;
+    border-radius: 10px;
     box-sizing: border-box;
     cursor: pointer;
     display: inline-flex;
