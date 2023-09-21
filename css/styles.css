@@ -1,0 +1,179 @@
+:root {
+    --vermelho: #EE0000;
+    --preto: #141414;
+    --cinza: #222222;
+    --cinzaDois: #444444;
+    --tonal: #394264;
+    --azul: #202830;
+}
+
+body {
+    background: var(--cinza);
+    font-family: 'Inter', sans-serif;
+    color: #FFF;
+}
+
+/*HEADER*/
+
+.header-container {
+    background-color: #141414;
+    padding-inline: 200px;
+}
+
+.header-container .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo-link {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    font-size: 20px;
+}
+
+.logo {
+    width: 100px;
+    margin-right: 10px;
+}
+
+header nav a {
+    margin-inline: 30px;
+
+}
+
+header nav a:hover {
+    color: #bbbbbb;
+}
+
+.navpage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*DROPDOWN MENU*/
+
+.dropbtn {
+    background-color: var(--vermelho);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #141414;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #FFF;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #141414
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: var(--vermelho);
+}
+
+/*MAIN*/
+
+.main-section {
+    font-size: 20px;
+    margin-inline: 190px;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .article-image1 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: red;
+    box-shadow: 0 10px #222222;
+} */
+
+.main-section .main-description {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.main-section .main-title {
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.highlight {
+    color: var(--vermelho);
+}
+
+.highlight:hover {
+    color: blueviolet;
+}
+
+img {
+    width: 20em;
+}
+
+button {
+    align-items: center;
+    border: 0;
+    border-radius: 100px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 20px;
+    max-width: 480px;
+    min-height: 40px;
+    min-width: 0px;
+    overflow: hidden;
+    padding: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*RODAPÉ*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100px;
+    background-color: #141414;
+}

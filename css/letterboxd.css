@@ -1,0 +1,86 @@
+:root {
+    --vermelho: #EE0000;
+    --preto: #141414;
+    --cinza: #222222;
+    --cinzaDois: #444444;
+    --tonal: #394264;
+    --azul: #202830;
+}
+
+body {
+    background: var(--azul);
+    font-family: 'Inter', sans-serif;
+    color: #FFF;
+}
+
+.sidebar {
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    background: var(--cinza);
+    font-size: 0.85rrem;
+}
+
+.nav {
+    position: relative;
+    margin: 0 15%;
+    text-align: right;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+}
+
+.nav img {
+    width: 10rem;
+}
+
+.nav ul {
+    list-style: none
+}
+
+.nav ul li {
+        position: relative;
+        margin: 3.2rem 0;
+}
+
+.nav ul li a {
+        line-height: 5rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.35rem;
+        display: block;
+}
+
+.letterboxd {
+    position: relative;
+    width: 75%;
+    float: right;
+    height: 100vh;
+}
+
+.letterboxd .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.letterboxd a {
+    position: relative;
+}
+
+.letterboxd a img {
+    width: 75px;
+    height: 75px;
+}
+
+
+.letterboxd p {
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    color: #FFF;
+    font-weight: bold;
+    margin-top: 20px;
+}
